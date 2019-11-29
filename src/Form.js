@@ -25,10 +25,7 @@ function Form({handleChange, input}) {
       />
 
       <label className="form-label">How was your meal?</label>
-      <div>
-        *** Add Emoji selector ***
-        {/* Your Code goes here */}
-      </div>
+      <div className="emoji-picker">Add emoji input here</div>
     </div>
   );
 }
