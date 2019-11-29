@@ -1,20 +1,26 @@
-import React, { useState } from 'react';
-import './App.css';
-import Header from './Header.js';
-import Form from './Form.js';
-import Preview from './Preview.js';
+import React, {useState} from "react";
+import "./App.css";
+import Header from "./Header.js";
+import Form from "./Form.js";
+import Preview from "./Preview.js";
 
 function App() {
+  const [input, setInput] = useState({feedback: "", party: 2});
+
+  const handleChange = e => {
+    setInput({...input, [e.target.name]: e.target.value});
+  };
+
   return (
     <div className="app">
       <Header />
 
       <main className="app-main">
         <section className="app-left">
-          <Form />
+          <Form handleChange={handleChange} input={input} />
         </section>
         <section className="app-right">
-          <Preview />
+          <Preview input={input} />
         </section>
       </main>
     </div>
