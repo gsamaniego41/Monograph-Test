@@ -22,3 +22,28 @@
   right: 0;
   width: 300px;
 }
+
+@media (max-width: 600px) {
+  .header {
+    padding: 1.5rem 0 2.8rem;
+    border: none;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .header-logo {
+    width: 3rem;
+    height: 3rem;
+    box-sizing: border-box;
+  }
+
+  .header-content {
+    font-size: 32px;
+    line-height: 37px;
+    margin-top: 1.8rem;
+  }
+
+  .header-illustration {
+    display: none;
+  }
+}

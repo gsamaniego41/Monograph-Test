@@ -31,10 +31,6 @@
   margin-bottom: 1rem;
 }
 
-/* .form label:last-of-type {
-  margin-bottom: 1.5rem;
-} */
-
 .emoji-picker {
   width: 100%;
   color: #ce0000;
@@ -46,4 +42,30 @@
   border-radius: 8px;
   box-sizing: border-box;
   border: 1px dashed #ce0000;
+}
+
+@media (max-width: 600px) {
+  .form {
+    width: 100%;
+    max-width: 90%;
+    margin: 1.5rem auto 2rem;
+  }
+
+  .form-label {
+    margin-bottom: 1rem;
+  }
+
+  .form-textarea {
+    margin-bottom: 2rem;
+    min-height: 139px;
+  }
+
+  .form-input {
+    margin-bottom: 2rem;
+  }
+
+  .emoji-picker {
+    font-size: 20px;
+    line-height: 23px;
+  }
 }

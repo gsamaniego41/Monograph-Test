@@ -15,11 +15,14 @@
 }
 
 .preview-emoji {
-  padding: 0.5rem;
-  display: inline-block;
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 1rem;
-  font-size: 40px;
   /* font-size: 36px; */
+  font-size: 40px;
   line-height: 47px;
   border-radius: 100%;
   background: #ffffff;
@@ -46,4 +49,21 @@
 
 .preview-party span {
   color: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+  .preview {
+    max-width: 90%;
+    margin-top: 2rem;
+  }
+
+  .preview-content {
+    padding: 1rem 0.7rem 2.2rem;
+  }
+
+  .preview-feedback {
+    font-size: 1.25rem;
+    line-height: 23px;
+    margin-bottom: 2.75rem;
+  }
 }
