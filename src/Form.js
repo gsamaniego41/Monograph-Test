@@ -1,7 +1,7 @@
 import React from "react";
 import "./Form.css";
 
-function Form({handleChange, input}) {
+function Form({handleChange, input, ratings}) {
   return (
     <div className="form">
       <label className="form-label">Your feedback</label>
@@ -25,7 +25,21 @@ function Form({handleChange, input}) {
       />
 
       <label className="form-label">How was your meal?</label>
-      <div className="emoji-picker">Add emoji input here</div>
+      <div className="emoji-picker">
+        {ratings.map((rating, index) => {
+          return (
+            <label key={index}>
+              <input
+                type="radio"
+                name="rating"
+                value={index}
+                onChange={handleChange}
+              />
+              {`${rating.emoji} ${rating.label}`}
+            </label>
+          );
+        })}
+      </div>
     </div>
   );
 }

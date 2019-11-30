@@ -31,7 +31,7 @@
   margin-bottom: 1rem;
 }
 
-.emoji-picker {
+/* .emoji-picker {
   width: 100%;
   color: #ce0000;
   padding: 43px 0;
@@ -42,6 +42,28 @@
   border-radius: 8px;
   box-sizing: border-box;
   border: 1px dashed #ce0000;
+} */
+
+.emoji-picker {
+  font-size: 1.25rem;
+}
+
+.emoji-picker label {
+  cursor: pointer;
+  width: 100%;
+  max-width: 480px;
+  display: block;
+  padding: 0.5rem;
+  padding-left: 0;
+  box-sizing: border-box;
+}
+
+.emoji-picker label:hover {
+  background: #f8fbfd;
+}
+
+input[type="radio"] {
+  margin-right: 0.5rem;
 }
 
 @media (max-width: 600px) {

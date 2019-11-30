@@ -25,6 +25,12 @@ Design Reference: [Figma File](https://www.figma.com/file/jjqRhIa54hOakjjAWkpbmC
 
    In your README doc, write a few sentences about why you might pick a certain direction.
 
+   I decided to go with radio buttons with 5 options for the following reasons:
+
+   - Less cognitive load for the user. Some people can get stuck picking an emoji if we use a full selector similar to Slack's.
+   - Less steps to select a rating. Options are already displayed as opposed to clicking/tapping a button to show a dropdown or modal.
+   - More usable on mobile. Visibility allows the user to scan and compare options quickly.
+
 4. **Add emoji selector** - Now implement your idea in code and render it on the right in the Preview section.
 5. **Style preview card** - Based on the [Figma File](https://www.figma.com/file/jjqRhIa54hOakjjAWkpbmC/Take-home-frontend-test?node-id=0%3A1), add CSS styling to the Preview area. In Figma you can click the "Code" tab in the upper right to get the relevant CSS values for each element you click.
 6. **Responsive styling** - Now that your Preview is looking good, we need to make the app work for mobile users. We'd like the Preview section to be on top in mobile and everything to look similar to the Figma mockup. Don't worry about tablet styling for now, this is just for mobile.
